@@ -1,0 +1,21 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Seguridad y credenciales de Gradio
+.gradio/
+*.pem
+
+# Datasets (Ignora los datos crudos de 2GB, permite subir 'preparados')
+datos/crudos/
+
+# Modelos, adaptadores LoRA y checkpoints pesados
+# (Evita subir carpetas completas con archivos .safetensors, .pt y .bin que pesan gigas)
+modelos/
+
+# Archivos de caché de Python y reportes locales
+__pycache__/
+*.pyc
+reporte_evaluacion.json
+.DS_Store
